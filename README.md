@@ -16,7 +16,7 @@ this module act between the `server.js` and the `cachingDB.js` is mainly for rem
 - `cachingDB.js` <br>
 takes care of the cache db like __updating cache__,__deleting old entries__ .
 
-![system design ](assets/Slide 16_9 - 1.png)
+<image src='assets/Slide 16_9 - 1(1).png' alt='system design'>
 
 ### in remote
 in this senario we expect the result is in remote and not in cache .
