@@ -1,8 +1,6 @@
 const app = require('express')()
 const api = require('./apifetch')
-require('dotenv').config()
 
-const PORT = process.env.PORT
 
 
 app.get('/:text/:from-:to',async(req,res)=>{
@@ -15,7 +13,4 @@ app.get('/:text/:from-:to',async(req,res)=>{
 })
 
 
-app.listen(
-	PORT,
-	()=> console.log(`listening on http://localhost:${PORT}`)
-)
+module.exports=app

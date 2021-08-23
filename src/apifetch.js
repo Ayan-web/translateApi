@@ -16,6 +16,7 @@ exports.apiCall = function (text,source,target)
         const cache = await db.cacheFetch(table,text,target);
         if(cache)
         {
+            conn.close()
             return {
                 text:cache[0],
                 from :source,
@@ -27,6 +28,7 @@ exports.apiCall = function (text,source,target)
         if(res)
         {
             await db.populate(table,text,res.translation,target)
+            conn.close();
             return {
                 text:res.text,
                 from:res.language.from,
