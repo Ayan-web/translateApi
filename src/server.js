@@ -1,5 +1,5 @@
 const app = require('express')()
-const api = require('./apifetch.js')
+const api = require('./apifetch')
 require('dotenv').config()
 
 const PORT = process.env.PORT
