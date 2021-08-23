@@ -50,7 +50,7 @@ PORT=8080 # server port
 host=localhost #server hosting address
 user=dataconnect # database username
 password=connectplease # database password
-database=cashing # database/schema name
+database=caching # database/schema name
 table=cache # table name
 cacheSize=2 # cache size
 
